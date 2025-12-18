@@ -1,0 +1,52 @@
+{
+  "module": {
+    "name": "Plannist",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "PlannistAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "PlannistAbility",
+        "srcEntry": "./ets/plannistability/PlannistAbility.ets",
+        "description": "$string:PlannistAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:PlannistAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "ohos.want.action.home"
+            ]
+          }
+        ]
+      }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "PlannistBackupAbility",
+        "srcEntry": "./ets/plannistbackupability/PlannistBackupAbility.ets",
+        "type": "backup",
+        "exported": false,
+        "metadata": [
+          {
+            "name": "ohos.extension.backup",
+            "resource": "$profile:backup_config"
+          }
+        ],
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "PlannistAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "PlannistAbility_label",
+      "value": "label"
+    }
+  ]
+}
